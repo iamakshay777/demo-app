@@ -45,6 +45,11 @@ pipeline {
       steps {
         sh 'pwd'
         echo 'run deployment'
+        script{
+            if(fileExists('main/index.html')) {
+                echo "index file is found"
+            }
+        }
       }
      }
     }
