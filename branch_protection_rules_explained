@@ -1,0 +1,31 @@
+
+GitHub branch protection rules are a set of rules that you can apply to your branches to ensure that certain requirements are met before any changes can be made. Here are some of the most common branch protection rules and what they mean in simple language:
+
+Require pull request reviews before merging: This means that before a branch can be merged, one or more people must review and approve the changes in a pull request.
+
+Require status checks before merging: This means that before a branch can be merged, certain criteria must be met, such as passing automated tests or meeting specific coding standards.
+
+Require signed commits: This means that all commits to the branch must be signed with a GPG key, which adds an extra layer of security and ensures that the changes are coming from a trusted source.
+
+Require branch up-to-date: This means that before a branch can be merged, it must be up-to-date with the branch it is being merged into.
+
+Require linear history: This means that all commits to the branch must be made in a linear sequence, rather than having multiple branches that merge into the same branch.
+
+Include administrators: This means that the branch protection rules also apply to repository administrators, ensuring that they can't bypass the rules.
+
+You can require that changes are successfully deployed to specific environments before a branch can be merged. For example, you can use this rule to ensure that changes are successfully deployed to a staging environment before the changes merge to your default branch.
+
+By applying these branch protection rules, you can help ensure that your codebase is stable, secure, and well-maintained, while also promoting collaboration and accountability among your development team.
+
+Require approval of the most recent reviewable push: you need permission to approve the latest update that can be reviewed in GitHub. This means that you have the authority to give the green light for the most recent changes made to a project in GitHub to be merged and made available for others to see.
+
+Dismiss stale pull request approvals when new changes are pushed: This option automatically dismisses previous approvals on a pull request if new changes are made to the branch. This ensures that reviewers are always reviewing the most recent changes.
+
+Require review from Code Owners: This option requires that one or more designated "Code Owners" for the repository must review and approve any changes made to the branch. Code Owners are defined in a file called "CODEOWNERS" in the repository's root directory.
+
+Required approving reviews: This option requires a specific number of approving reviews before changes can be merged. You can choose the number of required reviews and specify which reviewers are allowed to approve changes.
+
+Require approval of the most recent reviewable push:  you need permission to approve the latest update that can be reviewed in GitHub. This means that you have the authority to give the green light for the most recent changes made to a project in GitHub to be merged and made available for others to see.
+
+By default, you cannot delete a protected branch. When you enable deletion of a protected branch, anyone with at least write permissions to the repository can delete the branch.
+
